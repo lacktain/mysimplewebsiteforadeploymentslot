@@ -1,6 +1,11 @@
-const http = require('http');
-const port = process.env.PORT || 3000;
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('<h1>Hello from GitHub to Azure using Node!</h1>');
-}).listen(port);
+const express = require('express')
+const app = express()
+const port = process.env.PORT || 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello from GitHub to Azure using Node!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
