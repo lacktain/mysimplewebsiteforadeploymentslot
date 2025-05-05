@@ -1,3 +1,3 @@
 <?php
-echo "<h1>Hello from Azure App Service PHP!</h1>";
+echo "<h1>Hello from Azure App Service running PHP!</h1>";
 ?>
