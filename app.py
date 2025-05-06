@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "<h1>Hello from Azure App Service running Python! Developers like to work in GIThub</h1>"
+    return "<h1>Hello from Azure App Service running Python! Developers like to work in GitHub and do care about their code.</h1>"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8000)
